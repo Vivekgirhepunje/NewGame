@@ -14,7 +14,7 @@ startbtn.addEventListener("click",(e)=>{
                 makeBubble();
                 getNewHit();
             }
-            else{
+            else if(+(document.getElementById("hit").innerText)!==(+e.target.innerText) && e.target!==(document.querySelector("#p-bottom"))){
                 e.target.style.backgroundColor="red";
                 setTimeout(()=>{
                 e.target.style.backgroundColor=" rgb(201, 244, 201)";
